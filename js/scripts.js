@@ -1,47 +1,59 @@
 console.log('OK');
 
+var tl = gsap.timeline();
+var tl1 = gsap.timeline();
+var tl2 = gsap.timeline();
+var tl3 = gsap.timeline();
+var tl4 = gsap.timeline();
+var tl5 = gsap.timeline();
 
+tl.to(".ball", {
+  x: 100,
+  y: -325,
+  scale: -2,
+  repeat: 3,
+  duration: 2.5,
+  rotation: 360
+});
 
-gsap.to( '#big-heart', {
-    scale : 2,
-    duration: 2,
-    repeat: -1,
-    yoyo: true
-  });
-  
-  
-  // gsap.to('.ball', {
-  //   scale: 2,
-  //   yoyo: true,
-  //   duration:2.5,
-  //   ease: "steps(12)",
-  //   y: -500
-  // });
-  
-  
-  gsap.from('#bowl', {
-    x: 1000,
-    ease: 'bounce',
-    duration: 3,
-    delay: 4
-    
-  })
-  
-  gsap.from('#handle', {
-    y: -550,
-    ease: 'bounce',
-    delay: 3,
-    duration: 2,
-    rotate: 360
-  })
-  
-  gsap.from('.letter', {
-    
-    y: 1000, 
-    ease: 'elastic',
-    
-    stagger: {
-      each: 1,
-      from: 'edges'
-    }
-  });
+// Making the ball disappear and reappear
+tl1.fromTo(
+  ".ball",
+  {
+    opacity: 1
+  },
+  {
+    opacity: 0,
+    duration: 2.5,
+    repeat: 3
+  }
+);
+
+tl2.from("#c", {
+  x: 1000,
+  ease: "elastic.out",
+  delay: 1
+});
+
+tl3.from("#o", {
+  y: -500,
+  duration: 2.5,
+  ease: "steps(5)",
+  delay: 3
+});
+
+tl4.from("#y", {
+  duration: 2.5,
+  ease: "back.in(1.7)",
+  y: 250,
+  delay: 4
+});
+
+tl5.from("#i", {
+  duration: 2.5,
+  ease: "back.in(1.7)",
+  y: -250,
+  delay: 7.5
+});
+
+GSDevTools.create({});

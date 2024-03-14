@@ -1,25 +1,35 @@
-/* My Awesome Styles */
-
-/* Diagnostic Styling 
-  * Change Background Color
-  * Outline Elements
-*/
-
-* {
-    outline: 1px dotted black;
-}
-
-/* Doodle Stage */
+/* Stage */
 #stage {
-  background: #ccc;
+  background-image: url("https://bisoninc.com/cdn/shop/products/SC2480IGebs.jpg?v=1673534380");
+  background-size: 100% 100%;
   height: 300px;
   width: 600px;
 }
 
-#heart1 {
-  fill: red;
+#c {
+  fill: #7c2c3b;
 }
 
-#heart2 {
-  fill: green;
+#o {
+  fill: #2dafe5;
+}
+
+#y {
+  fill: #f8d742;
+}
+
+#i {
+  fill: #ffffff;
+}
+
+.ball {
+  width: 100px;
+  height: 100px;
+  background-image: url("https://i.postimg.cc/NjQXxmr4/Rectangle.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  border-radius: 100%;
+  position: relative;
+  left: 150px;
+  top: 130px;
 }
