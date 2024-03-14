@@ -53,7 +53,7 @@ tl5.from("#i", {
   duration: 2.5,
   ease: "back.in(1.7)",
   y: -250,
-  delay: 7.5
+  delay: 7
 });
 
 GSDevTools.create({});
