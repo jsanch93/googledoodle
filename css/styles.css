@@ -1,9 +1,9 @@
 /* Stage */
 #stage {
-  background-image: url("https://bisoninc.com/cdn/shop/products/SC2480IGebs.jpg?v=1673534380");
-  background-size: 100% 100%;
+  background-image: url("https://i.postimg.cc/bNskDj3K/Net.jpg");
   height: 300px;
   width: 600px;
+  border-radius: 10px;
 }
 
 #c {
@@ -15,11 +15,31 @@
 }
 
 #y {
-  fill: #f8d742;
+  fill: #f3d459;
 }
 
 #i {
   fill: #ffffff;
+}
+
+#come {
+  fill: #7a263a;
+  stroke: white;
+}
+
+#on {
+  fill: #1bb1e7;
+  stroke: white;
+}
+
+#you {
+  fill: #f3d459;
+  stroke: black;
+}
+
+#irons {
+  fill: white;
+  stroke: black;
 }
 
 .ball {
@@ -29,7 +49,8 @@
   background-repeat: no-repeat;
   background-position: center center;
   border-radius: 100%;
-  position: relative;
-  left: 150px;
-  top: 130px;
+  position: absolute;
+  left: 575px;
+  top: 305px;
+  z-index: 1;
 }
